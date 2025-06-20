@@ -20,21 +20,21 @@ const staticData = {
             name: 'Roof Installation',
             description: 'We offer top-quality roof installations guaranteeing year-round protection for your home.',
             icon: '🏠',
-            price: 'Starting at $8,000'
+            
         },
         {
             id: 2,
             name: 'Siding Installation',
             description: 'We specialize in professional siding installations improving your home\'s exterior appearance while ensuring long-term protection.',
             icon: '🏗️',
-            price: 'Starting at $12,000'
+            
         },
         {
             id: 3,
             name: 'Gutter Installation',
             description: 'We deliver expert gutter installations ensuring efficient water management and protecting your home from potential damage.',
             icon: '🌧️',
-            price: 'Starting at $1,500'
+            
         }
     ],
     testimonials: [
