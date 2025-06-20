@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - N & I Roofing LLC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <nav class="container">
+            <div class="logo">N & I Roofing LLC</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Contact N & I Roofing</h1>
+                <p>Get your free inspection and quote today. We're here to help with all your roofing needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- contact form -->
+                <div class="contact-form-container fade-in">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="roof-installation">Roof Installation</option>
+                                <option value="siding-installation">Siding Installation</option>
+                                <option value="gutter-installation">Gutter Installation</option>
+                                <option value="insurance-claim">Insurance Claim Assistance</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or any questions you have..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info fade-in">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>(815) 579-0866</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>nsharper@niroofing.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Service Area</h3>
+                                <p>Bourbonnais, IL</p>
+                                <p>& Surrounding Areas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">🕒</div>
+                            <div class="contact-details">
+                                <h3>Business Hours</h3>
+                                <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emergency-contact">
+                        <h3>24/7 Emergency Service</h3>
+                        <p>For urgent roofing emergencies, call:</p>
+                        <p class="emergency-number">(815) 579-0866</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- quote section -->
+    <section class="quote-calculator">
+        <div class="container">
+            <h2 class="section-title fade-in">Quick Quote Calculator</h2>
+            <div class="calculator-container fade-in">
+                <form id="quoteCalculator" class="quote-form">
+                    <div class="quote-inputs">
+                        <div class="quote-group">
+                            <label for="calc-service">Service Type</label>
+                            <select id="calc-service" required>
+                                <option value="">Select Service</option>
+                                <option value="roofing">Roof Installation</option>
+                                <option value="siding">Siding Installation</option>
+                                <option value="gutters">Gutter Installation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="quote-group">
+                            <label for="square-footage">Square Footage</label>
+                            <input type="number" id="square-footage" placeholder="e.g., 1500" required>
+                        </div>
+                        
+                        <button type="submit" class="cta-button">Calculate Estimate</button>
+                    </div>
+                    
+                    <div id="quote-result" class="quote-result" style="display: none;">
+                        <h3>Estimated Cost</h3>
+                        <div class="quote-price"></div>
+                        <p class="quote-disclaimer">This is a rough estimate. Contact us for a detailed quote.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ's' -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item fade-in">
+                    <h3>Do you work with insurance companies?</h3>
+                    <p>Yes! We specialize in insurance claims and will work directly with your insurance company to ensure you get maximum coverage
+                         for your roofing project.</p>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <h3>How long does a typical roof installation take?</h3>
+                    <p>Most residential roof installations take 1-3 days, depending on the size and complexity of your home. We'll provide a detailed timeline 
+                        during your consultation.</p>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <h3>What warranty do you offer?</h3>
+                    <p>We offer comprehensive warranties on both materials and workmanship. IKO Dynasty shingles come with a limited lifetime warranty, 
+                        and our installation is backed by our quality guarantee.</p>
+                </div>
+                
+                <div class="faq-item fade-in">
+                    <h3>Do you provide free estimates?</h3>
+                    <p>Absolutely! We provide free, no-obligation estimates for all our services. Contact us to schedule your free inspection and consultation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA section -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="fade-in">
+                <h2>Ready to Get Started?</h2>
+                <p>Don't wait for small problems to become big ones. Contact us today for your free roofing inspection.</p>
+                <div class="cta-buttons">
+                    <a href="tel:8155790866" class="cta-button">Call Now</a>
+                    <a href="#contactForm" class="cta-button">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 N & I Roofing LLC. All rights reserved. Professional roofing services you can trust.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // contact form
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                service: document.getElementById('service').value,
+                message: document.getElementById('message').value
+            };
+            
+            const success = await submitContactForm(formData);
+            if (success) {
+                this.reset();
+            }
+        });
+
+        // quote calculator
+        document.getElementById('quoteCalculator').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const service = document.getElementById('calc-service').value;
+            const squareFootage = document.getElementById('square-footage').value;
+            
+            const quote = await getQuote(service, squareFootage);
+            if (quote && quote.success) {
+                const resultDiv = document.getElementById('quote-result');
+                const priceDiv = resultDiv.querySelector('.quote-price');
+                priceDiv.textContent = `$${quote.data.estimatedCost.toLocaleString()}`;
+                resultDiv.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
