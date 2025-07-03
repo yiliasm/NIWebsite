@@ -255,7 +255,6 @@ nav {
 }
 
 .about-image, .service-detail-image, .placeholder-image {
-    background: linear-gradient(135deg, #6B9BD1, #4A7BA7);
     border-radius: 15px;
     height: 400px;
     display: flex;
@@ -264,6 +263,10 @@ nav {
     color: white;
     font-size: 1.2rem;
     text-align: center;
+}
+
+.placeholder-image {
+    background: linear-gradient(135deg, #6B9BD1, #4A7BA7);
 }
 
 .about-image img,
