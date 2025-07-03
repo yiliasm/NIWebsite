@@ -1,0 +1,10 @@
+{
+  "name": "ni-roofing-website",
+  "version": "1.0.0",
+  "description": "N & I Roofing LLC Website",
+  "scripts": {
+    "build": "echo 'No build required for static site' && exit 0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
